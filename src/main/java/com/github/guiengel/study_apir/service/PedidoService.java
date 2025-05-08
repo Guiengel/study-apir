@@ -24,6 +24,8 @@ public class PedidoService {
     private ProdutoRepository produtoRepository;
 
     public Pedido create(PedidoRequestCreate dto){
+        Pedido pedido = new Pedido();
+        pedidoRepository.save(pedido);
         return null;
     }
 }
